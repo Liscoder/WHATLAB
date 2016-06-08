@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+	  	<title>Whatsapp Web</title>
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	  	<link rel="stylesheet" href="css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+	  	<link rel="stylesheet" href="css/icomoon.css">
+	  	<link rel="stylesheet" href="css/grid-system.css">
+	  	<link rel="stylesheet" href="fonts.css">
+	  	<link rel="stylesheet" href="css/main.css">
+	  	<link rel="stylesheet" type="text/css" href="css/queries.css"> 
+	  	<!-- Vincula los CSS que faltan -->
+	</head>
+	<body>
+		<!-- Inserta tu codigo aqui -->
+		<header>
+			<div class="container hea-cont">
+				<div class="row d-1">
+					<div class="col-4 f-w">
+<!-- imagengianymensaje-->
+						<div class="col-9  fl-l">
+							<img src="image/gian.jpg" alt=""> 
+						</div>
+						<div class="col-3 iconos fl-r">
+							<i class="icon-message"> </i>
+							<i class="icon-dots-three-vertical"> </i>
+						</div>
+					</div>
+
+					<div class="col-7 f-w">
+						<div class="col-1 fl-l" id="plusimagen">
+							<!-- <img src="image/logocodeacademy.png" alt="">  -->
+						</div>
+						<div class="col-9">
+							<h5 id="team"><!-- Laboratoria Perú --></h5>
+							<!-- <p>Ana María, Aldo, Gian, Mariana, Papu, Tú</p> -->
+						</div>
+						<div class="col-2 iconos fl-r">
+							<i class="icon-attachment"> </i>
+							<i class="icon-dots-three-vertical"> </i>
+						</div> 
+					</div>
+				</div>
+
+				<div class="row d-2">
+					<div class="col-4">
+						<div class="col-12">
+							<div class="insert">
+								<span class="icon-search"></span>	
+								<input type="text" placeholder="Buscar o empezar un chat nuevo" id="buscarname"/>
+							</div>
+						</div>
+<!-- imagengianymensaje chat-grupal-->
+						<div class="col-12 d-contact usuarios">
+							<div class="col-12 users" data="0" onclick="limpiar()">	
+								<div class="col-2 fl-l">	
+									<img src="image/logocodeacademy.png" alt="">
+								</div> 
+								<div class="col-8" >
+									<h5 class="name">Laboratoria Peru</h5>
+									<p>Aldo:Dale dale!</p>
+								</div>
+								<span class="hour fl-r">14:25</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="1" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/raymi.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Raymi Saldamando</h5>
+										<p>La clase va bien</p>
+									</div>
+									<span class="hour fl-r">11:25</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="2" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/mariana.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Mariana Costa</h5>
+										<p>El panel de speakers esta buenazo</p>
+									</div>
+									<span class="hour fl-r">9:25</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="3" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/anamaria.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Ana María Martinez Franklin</h5>
+										<p>Pues dale chamo!</p>
+									</div>
+									<span class="hour fl-r">Ayer</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="4" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/rodulfo.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Rodulfo Prieto</h5>
+										<p>¿Cómo van las chicas?</p>
+									</div>
+									<span class="hour fl-r">Martes</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="5" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/andrea.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Andrea Lamas</h5>
+										<p>Hoy me toca clases de canto,yee!</p>
+									</div>
+									<span class="hour fl-r">Lunes</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="6" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/mariapaula.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Maria Paula Rivarola</h5>
+										<p>Wuju! esto me encanta!! en verdad!</p>
+									</div>
+									<span class="hour fl-r">13/01/2016</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="7" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/katy.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Katy Sanchez</h5>
+										<p>No te preocupes, tengo el salón bajo control</p>
+									</div>
+									<span class="hour fl-r">11/01/2016</span>
+							</div>
+	<!-- imagengianymensaje chat-grupal-->
+							<div class="col-12 users" data="8" onclick="limpiar()">	
+									<div class="col-2 fl-l">	
+										<img src="image/aldo.jpg" alt="">
+									</div> 
+									<div class="col-8" >
+										<h5 class="name">Aldo Alfaro</h5>
+										<p>Vao a comer?</p>
+									</div>
+									<span class="hour fl-r">03/01/2016</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-7 d-docu">
+						<div class="col-12 contenido" id="lista">
+							<!-- <div class="people">
+								<h5 class="text-c">Andrea Lamas</h5>
+								<p>Chicos han visto el nuevo corte de Aldo?</p>
+								<span class="hour fl-r">11:12</span>
+							</div>
+							<div class="people">
+								<h5 class="text-l">Mariana Costa</h5>
+								<p>¿Finalmente se corto?</p>
+								<span class="hour fl-r">11:13</span>
+							</div>
+							<div class="people">
+								<h5 class="text-v">Maria Paula Rivarola</h5>
+								<p>jajaja Sii finalmente se corto!!</p>
+								<span class="hour fl-r">11:13</span>
+							</div>
+						</div>
+					
+						<div class="col-12 contenido comt-g">
+							<div class="people fl-r">
+								<h5 class="text-l"></h5>
+								<p >Antes parecía mufasa jajaja</p>
+								<span class="hour fl-r h-1">11:14</span>
+							</div>
+							<div class="people fl-r">
+								<div  class="col-12">
+								<p>Ahora si esta decente</p>
+								<span class="hour fl-r h-2">11:18</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 contenido">
+							<div class="people">
+								<h5 class="text-c">Andrea Lamas</h5>
+								<p>¿Por qué se lo habrá cortado?
+								</p>
+								<span class="hour fl-r">11:20</span>
+							</div>
+							<div class="people">
+								<h5 class="text-m">Aldo Alfaro</h5>
+								<p>Ya ya ya hacia mucho calor que más
+								</p>
+								<span class="hour fl-r">11:25</span>
+							</div>
+							<div class="people">
+								<h5 class="text-c">Andrea Lamas</h5>
+								<p>Esta siguiendo los pasos de Juan Diego!</p>
+								<span class="hour fl-r">11:30</span>
+							</div>
+							<div class="people">
+								<h5 class="text-v">Maria Paula Rivarola</h5>
+								<p>Nunca!!! Juan Diego es único</p>
+								<span class="hour fl-r">11:31</span>
+							</div> -->
+						</div>
+					</div>					
+						<div class="col-7 cmt-f i-txt f-w text-center ">
+							<button type="button"  class="myModal" data-toggle="modal" data-target="#myModal">	 <span class="icon-insert_emoticon emoticon fl-l" style="font-size:35px"> </span> </button>
+							<input id="inputBox" class="com-n mg" type="text" placeholder="Escribe tu mensaje aquí" onkeypress="tweet(event)"></input>
+							<span class="icon-mic fl-r" style="font-size:35px"> </span>
+						</div>
+						<div class="modal fade" id="myModal" role="dialog">
+			
+
+					<div class="modal-dialog">
+				        <!-- Modal content-->
+				   		<div class="modal-content">
+							<div class="modal-header">
+				          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        	</div>
+				        	<div class="modal-body">
+				          		<ul>	
+									<li><input type="checkbox" class="ciudadamerica" id="ena" data="0"><img src="img/ico_ena.png" alt=""></li>
+									<li><input type="checkbox" class="ciudadamerica" id="lentes" data="1"><img src="img/ico_lentes.png" alt=""></li>
+									<li><input type="checkbox" class="ciudadamerica" id="lloron" data="2"><img src="img/ico_lloron.png" alt=""></li>
+									<li><input type="checkbox" class="ciudadamerica" id="risa" data="3"><img src="img/ico_risa.png" alt=""></li>
+									<li><input type="checkbox" class="ciudadamerica" id="rubor" data="4"><img src="img/ico_rubor.png" alt=""></li>
+				          		</ul>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>							
+		</header>
+		<section>
+			
+		</section>
+		<footer>
+			
+		</footer>
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+	</body>
+</html>
